@@ -1,5 +1,6 @@
 language: node_js
 node_js:
+  - "7"
   - "6"
   - "5"
   - "4"
@@ -19,26 +20,26 @@ sudo: false
 matrix:
   fast_finish: true
   include:
-   - node_js: "6"
+   - node_js: "node"
      env: LINT=true
-   - node_js: "6"
+   - node_js: "node"
      env: EXAMPLE=mocha
-   - node_js: "6"
+   - node_js: "node"
      env: EXAMPLE=karma
-   - node_js: "6"
+   - node_js: "node"
      env: EXAMPLE=react-native
-   - node_js: "6"
+   - node_js: "node"
      env: EXAMPLE=karma-webpack
-   - node_js: "6"
+   - node_js: "node"
      env: EXAMPLE=jest
-   - node_js: "6"
+   - node_js: "node"
      env: KARMA=true REACT=0.13
-   - node_js: "6"
+   - node_js: "node"
      env: KARMA=true REACT=0.14
-   - node_js: "6"
+   - node_js: "node"
      env: KARMA=true REACT=15
   allow_failures:
-    - node_js: "6"
+    - node_js: "node"
       env: EXAMPLE=react-native
 env:
   - REACT=0.13
